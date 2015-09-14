@@ -28,21 +28,54 @@ interface Validator
 class uservalidator implements validateFname, validateLname, validateEmail, validatePwd
 {
 
+	/**
+	 * validate firstname
+	 *
+	 * @author subramanian.v
+	 * @param $fname string
+	 * @since 6.1
+	 * @return boolean
+	 */
     public function validateFname($fname)
     {
        return 1;
     }
 
+	/**
+	 * validate last name
+	 *
+	 * @author subramanian.v
+	 * @param $lname string
+	 * @since 6.1
+	 * @return boolean
+	 */
     public function validateLname($lname)
     {
        return 1;
     }
 
+	/**
+	 * validate email
+	 *
+	 * @author subramanian.v
+	 * @param $email string
+	 * @since 6.1
+	 * @return boolean
+	 */
 	public function validateEmail($email)
     {
        return 1;
     }
 
+
+	/**
+	 * validate password
+	 *
+	 * @author subramanian.v
+	 * @param $pwd string
+	 * @since 6.1
+	 * @return boolean
+	 */
 	public function validatePwd($pwd)
     {
        return 1;
